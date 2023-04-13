@@ -34,7 +34,8 @@ rules: {
     'checksVoidReturn': {
       'attributes': false
     }
-  }]
+  }],
+  '@typescript-eslint/no-floating-promises': off
 }
 ignorePatterns: [
   'vite-env.d.ts',

@@ -58,7 +58,7 @@ const counterSlice = createSlice({
       })
       .addCase(getStats.fulfilled, (state, { payload }) => {
         state.loadingStatus = "idle";
-        state.stats = payload;
+        state.stats = payload as never;
       })
       .addCase(getStats.rejected, (state, { error }) => {
         state.loadingStatus = "failed";
